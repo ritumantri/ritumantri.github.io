@@ -1,44 +1,35 @@
 <!DOCTYPE html>
 <html lang="en" id="htmlEl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- Tailwind CSS via CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet" />
 
-  <!-- Optional: Custom font using Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com">
+    </script>
 
-  <!-- Tailwind font customization -->
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: {
-            plex: ['"IBM Plex Sans"', 'sans-serif'],
-          },
-        },
-      },
-    }
-  </script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        plex: ['"IBM Plex Sans"', 'sans-serif'],
+                    },
+                },
+            },
+        }
+    </script>
 
-  <title>Ritu’s Web</title>
+    <title>Ritu’s Web</title>
 </head>
-<body class="font-plex bg-white text-black dark:bg-black dark:text-white transition-colors duration-500 m-4">
-  <h1 class="text-4xl">Welcome to Ritu's Web World</h1>
+<body class="font-plex bg-white text-black m-4">
+    <h1 class="text-4xl">My Web World 🌐︎</h1>
 
-  <button id="toggleButton" class="text-xl bg-blue-600 rounded px-2 py-1 mt-4 text-white">
-    Toggle Dark Mode
-  </button>
-
-  <ul class="mt-4 underline space-y-2">
-    <li><a href="https://ritumantri.github.io/Chaos-Reader/">Chaosifier</a></li>
-    <li><a href="https://walking-draw.glitch.me/">Walking Draw</a></li>
-    <li><a href="https://ritumantri.github.io/Chaos-Reader/">Generative Beowulf</a></li>
-  </ul>
-
-  <!-- Your external JS file -->
-  <script src="script.js"></script>
+    <ul class="mt-4 underline space-y-2">
+        <li><a href="https://ritumantri.github.io/Chaos-Reader/">Chaosifier</a></li>
+        <li><a href="https://walking-draw.glitch.me/">Walking Draw</a></li>
+        <li><a href="https://ritumantri.github.io/Chaos-Reader/">Generative Beowulf</a></li>
+    </ul>
 </body>
 </html>
