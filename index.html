@@ -1,23 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="htmlEl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
 
-  <title>Ritu Mantri</title>
+  <!-- Optional: Custom font using Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind font customization -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            plex: ['"IBM Plex Sans"', 'sans-serif'],
+          },
+        },
+      },
+    }
+  </script>
+
+  <title>Ritu’s Web</title>
 </head>
-<body class="dark:bg-black m-4 font-plex">
-  <h1 class="text-4xl dark:text-white">My Web World</h1>
+<body class="font-plex bg-white text-black dark:bg-black dark:text-white transition-colors duration-500 m-4">
+  <h1 class="text-4xl">Welcome to Ritu's Web World</h1>
 
-  <ul class="dark:text-white mt-4 space-y-2">
+  <button id="toggleButton" class="text-xl bg-blue-600 rounded px-2 py-1 mt-4 text-white">
+    Toggle Dark Mode
+  </button>
+
+  <ul class="mt-4 underline space-y-2">
     <li><a href="https://ritumantri.github.io/Chaos-Reader/">Chaosifier</a></li>
     <li><a href="https://walking-draw.glitch.me/">Walking Draw</a></li>
     <li><a href="https://ritumantri.github.io/Chaos-Reader/">Generative Beowulf</a></li>
   </ul>
 
+  <!-- Your external JS file -->
+  <script src="script.js"></script>
 </body>
 </html>
